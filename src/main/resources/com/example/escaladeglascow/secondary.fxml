@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1027.0" prefWidth="1503.0" style="-fx-background-color: #006064;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.escaladeglascow.SecondaryController">
+   <children>
+      <Label layoutX="51.0" layoutY="49.0" text="Faça a sua avaliçao" textFill="#f5f5f5">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="51.0" layoutY="91.0" text="De acordo com o tipo de teste escolha uma da opçoes ao lado" textFill="#f5f5f5">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="butoaFinalizarTeste" layoutX="84.0" layoutY="882.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="760.0" style="-fx-background-color: #D81B60;" text="Finalizar" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="containerOcular" layoutX="37.0" layoutY="147.0" prefHeight="214.0" prefWidth="930.0" style="-fx-background-color: #004D40;">
+         <children>
+            <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="35.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/view.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="102.0" layoutY="37.0" text="Teste de abertura Ocular" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="87.0" text="Resposta de abertura ocular" textFill="#f5f5f5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="116.0" text="De acordo com o tipo &#10;de teste escolha uma da opçoes ao lado" textFill="#f5f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="comboBoxOcular" layoutX="667.0" layoutY="85.0" prefHeight="25.0" prefWidth="230.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerOcular1" layoutX="37.0" layoutY="392.0" prefHeight="214.0" prefWidth="930.0" style="-fx-background-color: #004D40;">
+         <children>
+            <Label layoutX="102.0" layoutY="37.0" text="Teste Verbal" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="87.0" text="Resposta verbal" textFill="#f5f5f5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="116.0" text="De acordo com o tipo &#10;de teste escolha uma da opçoes ao lado" textFill="#f5f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="24.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/speaking.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="comboBoxVerbal" layoutX="662.0" layoutY="91.0" prefHeight="25.0" prefWidth="230.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerOcular2" layoutX="37.0" layoutY="640.0" prefHeight="214.0" prefWidth="930.0" style="-fx-background-color: #004D40;">
+         <children>
+            <Label layoutX="102.0" layoutY="37.0" text="Teste Motor" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="87.0" text="Resposta motora" textFill="#f5f5f5">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="110.0" layoutY="116.0" text="De acordo com o tipo &#10;de teste escolha uma da opçoes ao lado" textFill="#f5f5f5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="46.0" fitWidth="49.0" layoutX="33.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/walk.png" />
+               </image>
+            </ImageView>
+            <ComboBox fx:id="comboBoxMotor" layoutX="663.0" layoutY="87.0" prefHeight="25.0" prefWidth="230.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerOcular3" layoutX="1030.0" layoutY="144.0" prefHeight="708.0" prefWidth="385.0" style="-fx-background-color: #004D40;">
+         <children>
+            <Label layoutX="66.0" layoutY="81.0" text="Tipo de trauma:" textFill="#f5f5f5">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="tipoDeTrauma" layoutX="111.0" layoutY="211.0" text="Resultado" textFill="#f5f5f5">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="butaoFazerTesteDeNovo" layoutX="938.0" layoutY="882.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="501.0" style="-fx-background-color: #4A148C;" text="Fazer teste novamente" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
